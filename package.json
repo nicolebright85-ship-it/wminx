@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-   "scripts": {
-  "build": "echo 'No client to build'",
-  "start": "node server/index.js"
-},
+    "build": "echo \"No client to build\"",
+    "start": "node server/index.js"
+  },
   "engines": {
     "node": ">=18"
-  }
+  },
+  "dependencies": {}
 }

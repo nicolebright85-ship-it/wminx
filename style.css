@@ -1,0 +1,57 @@
+/* Reset some styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Background and text */
+body {
+  background-color: #000000; /* black */
+  color: #c8a2c8; /* purple */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Main content */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+.games-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* Game card style */
+.game-card {
+  background-color: #1a001a; /* dark purple */
+  border: 2px solid #c8a2c8;
+  border-radius: 12px;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.game-card h2 {
+  margin-bottom: 0.5rem;
+}
+
+.game-card iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+  background-color: #000;
+}

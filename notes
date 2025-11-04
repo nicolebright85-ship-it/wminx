@@ -1,0 +1,18 @@
+
+---
+
+# Quick checklist for deployment on Railway
+
+1. Push repo to GitHub.
+2. On Railway, create new project → deploy from GitHub → choose this repo.
+3. Railway should detect `package.json`. Configure start command `node server/index.js` if needed.
+4. Add Redis plugin (Provisioned Redis) — Railway will provide `REDIS_URL`.
+5. Deploy. The app will serve the client build from `client/dist`.
+
+---
+
+# Final notes / next steps I can help with
+- Add GitHub Actions to build/test on push.
+- Add optional authentication (e.g., GitHub OAuth) to tie scores to users.
+- Polish styling, accessibility, or add more games (2048, Memory, Pong).
+- Add unit tests for server endpoints.

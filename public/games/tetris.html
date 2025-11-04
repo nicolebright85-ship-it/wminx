@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tetris</title>
+<style>
+body { margin:0; background:#000; color:#fff; display:flex; justify-content:center; align-items:center; height:100vh;}
+canvas { border:2px solid #c8a2c8; }
+</style>
+</head>
+<body>
+<canvas id="tetris" width="240" height="400"></canvas>
+<script>
+// Simple placeholder: draws a rectangle
+const canvas = document.getElementById('tetris');
+const ctx = canvas.getContext('2d');
+ctx.fillStyle = '#c8a2c8';
+ctx.fillRect(20, 20, 50, 50);
+</script>
+</body>
+</html>

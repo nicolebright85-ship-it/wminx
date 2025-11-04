@@ -1,1 +1,0 @@
-app.get('/_health', (req, res) => res.json({ ok: true, ts: Date.now() }));

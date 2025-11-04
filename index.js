@@ -1,9 +1,19 @@
+// index.js
 const express = require("express");
-const app = express();
+const path = require("path");
 
-app.get("/", (req, res) => {
-  res.send("Server is running successfully!");
+const app = express();
+const PORT = process.env.PORT || 8080;
+
+// Serve all static files from the "public" folder
+app.use(express.static(path.join(__dirname, "public")));
+
+// Fallback for all routes — sends users to index.html
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
-const port = process.env.PORT || 3000;
-app.listen(port, () => console.log(`Server listening on port ${port}`));
+// Start the server
+app.listen(PORT, () => {
+  console.log(`Server listening on port ${PORT}`);
+});

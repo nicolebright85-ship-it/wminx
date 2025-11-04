@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "echo \"No client to build\"",
-    "start": "node server/index.js"
+    "start": "node index.js"
   },
   "engines": {
     "node": ">=18"

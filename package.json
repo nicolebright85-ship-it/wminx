@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "npm --prefix client install && npm --prefix client run build",
-    "start": "node server/index.js"
-  },
+   "scripts": {
+  "build": "echo 'No client to build'",
+  "start": "node server/index.js"
+},
   "engines": {
     "node": ">=18"
   }
